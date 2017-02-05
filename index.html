@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zn-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浏览器介绍</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9 ]>
+    <script src="asset/js/respond.min.js"></script>
+    <script src="asset/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- 顶部导航条 -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container-fluid"><!-- 不固定的,container居中 -->
+        <div class="navbar-header">
+            <!-- 缩小到某个宽度是导航栏折叠成三横,处于折叠的状态 -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#demo-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--logo -->
+            <a href="#" class="navbar-brand">现代浏览器</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="demo-navbar">
+            <!-- 导航栏的导航item -->
+            <ul class="nav navbar-nav">
+                <!-- a标签为点击的链接 -->
+                <li class="active"><a href="#">综述</a></li>
+                <li><a href="#">概述</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">特点<span class="caret"></span></a>
+                    <!-- 下拉菜单 -->
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#tab-Chrome" >Chrome</a></li>
+                        <li><a href="#tab-Firefox" >Firefox</a></li>
+                        <li><a href="#tab-Safari">Safari</a></li>
+                        <li><a href="#tab-Opera">Opera</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 轮播图 -->
+<div id="carousel-example-generic" class="carousel slide" data-ride>
+    <!-- indicators 指示器 -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+
+    <!-- inner -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <!-- 图片 -->
+            <img src="asset/images/chrome-big.jpg" alt="Chrome">
+            <!-- 描述 -->
+            <div class="carousel-caption">
+                <h1>Chrome</h1>
+                <p class="caption-describe-m">这是Google公司出品的一个很优秀的一个浏览器</p>
+                <p><a href="http://www.firefox.com.cn/download" class="btn btn-primary btn-lg" target="_blank"
+                      role="button">点击下载</a></p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="asset/images/firefox-big.jpg" alt="Firefox">
+            <div class="carousel-caption">
+                <h1>Firefox</h1>
+                <p class="caption-describe-m">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut
+                    doloremque doloribus, eos expedita labore nam perspiciatis placeat quasi quibusdam quis, quod sed
+                    suscipit ullam voluptatem. A nostrum recusandae veritatis.</p>
+                <p><a href="http://www.firefox.com.cn/download" class="btn btn-primary btn-lg" target="_blank"
+                      role="button">点击下载</a></p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="asset/images/safari-big.jpg" alt="Safari">
+            <div class="carousel-caption">
+                <h1>Safari</h1>
+                <p class="caption-describe-m">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iure nam
+                    quibusdam! Consequatur culpa fugiat minus natus nisi quam qui totam voluptas. Deleniti illo illum
+                    neque numquam sapiente sint voluptas.</p>
+                <p><a href="http://www.firefox.com.cn/download" class="btn btn-primary btn-lg" target="_blank"
+                      role="button">点击下载</a></p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="asset/images/opera-big.jpg" alt="Opera">
+            <div class="carousel-caption">
+                <h1>Opera</h1>
+                <p class="caption-describe-m">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                    adipisci animi consequuntur culpa deserunt earum enim esse exercitationem, expedita facilis harum
+                    nobis obcaecati odio placeat reiciendis, reprehenderit suscipit tempora voluptatem!</p>
+                <p><a href="http://www.firefox.com.cn/download" class="btn btn-primary btn-lg" target="_blank"
+                      role="button">点击下载</a></p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 左三角形选择按钮 -->
+    <a href="#carousel-example-generic" class="left carousel-control" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">上一页</span>
+    </a>
+
+    <!-- 右三角形选择按钮 -->
+    <a href="#carousel-example-generic" class="right carousel-control" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">下一页</span>
+    </a>
+</div>
+
+<!-- 内容 -->
+<div class="container" id="summary-container">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="asset/images/chrome-logo-small.jpg" alt="chrome" class="img-circle">
+            <h2>Chrome</h2>
+            <p>Google Chrome,又称Google浏览器,是一个由Google公司开发的浏览器</p>
+            <p><a href="http://www.firefox.com.cn/download" class="btn btn-default" target="_blank">点我下载</a></p>
+        </div>
+        <div class="col-md-4">
+            <img src="asset/images/firefox-logo-small.jpg" alt="firefox" class="img-circle">
+            <h2>Chrome</h2>
+            <p>Mozilla Firefox,中文名通常称为"火狐"或"火狐浏览器",是一个开源的网页浏览器</p>
+            <p><a href="http://www.firefox.com.cn/download" class="btn btn-default" target="_blank">点我下载</a></p>
+        </div>
+        <div class="col-md-4">
+            <img src="asset/images/safari-logo-small.jpg" alt="safari" class="img-circle">
+            <h2>Chrome</h2>
+            <p>Safari,是苹果计算机的最新操作系统Mac Os X中的浏览器</p>
+            <p><a href="http://www.firefox.com.cn/download" class="btn btn-default" target="_blank">点我下载</a></p>
+        </div>
+    </div>
+    <hr class="divider-m">
+
+    <!-- 标签页 -->
+    <ul class="nav nav-tabs" role="tablist" id="tab-list">
+        <li class="active"><a href="#tab-Chrome" data-toggle="tab" role="tab">Chrome</a></li>
+        <li><a href="#tab-Firefox" data-toggle="tab" role="tab">Firefox</a></li>
+        <li><a href="#tab-Safari" data-toggle="tab" role="tab">Safari</a></li>
+        <li><a href="#tab-Opera" data-toggle="tab" role="tab">Opera</a></li>
+    </ul>
+    <!-- 标签内容 -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-Chrome">
+            <div class="col-md-7">
+                <h1 class="text-muted ">
+                    <small>Windows首选</small>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, commodi delectus dicta dolorem,
+                    doloribus dolorum eligendi eos ex id illum inventore laborum magni nemo provident quasi quo tempore,
+                    voluptatem. Accusamus?</p>
+            </div>
+            <div class="col-md-5"><img src="asset/images/chrome-logo.jpg" alt="Chrome"></div>
+        </div>
+
+        <div class="tab-pane" id="tab-Firefox">
+            <div class="col-md-7">
+                <h1 class="text-muted">
+                    <small>Windows首选</small>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing e1it. Beatae, commodi delectus dicta dolorem,
+                    doloribus dolorum eligendi eos ex id illum inventore laborum magni nemo provident quasi quo tempore,
+                    voluptatem. Accusamus?</p>
+            </div>
+            <div class="col-md-5"><img src="asset/images/firefox-logo.jpg" alt="Chrome"></div>
+        </div>
+
+        <div class="tab-pane" id="tab-Safari">
+            <div class="col-md-7">
+                <h1 class="text-muted">
+                    <small>Windows首选</small>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, commodi delectus dicta dolorem,
+                    doloribus dolorum eligendi eos ex id illum inventore laborum magni nemo provident quasi quo tempore,
+                    voluptatem. Accusamus?</p>
+            </div>
+            <div class="col-md-5"><img src="asset/images/safari-logo.jpg" alt="Chrome"></div>
+        </div>
+
+        <div class="tab-pane" id="tab-Opera">
+            <div class="col-md-7">
+                <h1 class="text-muted">
+                    <small>Windows首选</small>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, commodi delectus dicta dolorem,
+                    doloribus dolorum eligendi eos ex id illum inventore laborum magni nemo provident quasi quo tempore,
+                    voluptatem. Accusamus?</p>
+            </div>
+            <div class="col-md-5"><img src="asset/images/opera-logo.jpg" alt="Chrome"></div>
+        </div>
+    </div>
+</div>
+
+<!-- 弹出框(模态框)Modal -->
+<div class="modal fade" id="about">
+    <div class="modal-dialog">
+        <!-- content(内容) -->
+        <div class="modal-content">
+            <!-- header(头部) -->
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">关于</h4>
+            </div>
+
+            <!-- body(中间内容) -->
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore nam quas rerum saepe.
+                    Dolorem, illo magnam modi natus nemo nihil placeat quaerat reiciendis sed sint tempora totam
+                    voluptas voluptatum.</p>
+            </div>
+
+            <!-- footer(脚部) -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                <!--<button type="button" class="btn btn-primary">确认</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/require.js" data-main="js/index"></script>
+
+</body>
+</html>
